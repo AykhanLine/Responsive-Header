@@ -1,0 +1,354 @@
+@import'./variables';
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    .top-header {
+        padding: 7px;
+
+    }
+
+    .top-left {
+        display: inline-flex;
+        align-items: center;
+        padding: 0;
+
+        i {
+            font-size: 5px;
+            color: $content-color;
+            margin-right: 5px;
+
+        }
+
+
+        p {
+            font-size: 13px;
+            padding: 0;
+            margin: 0%;
+            font-weight: 700;
+            margin-right: 10px;
+            cursor: pointer;
+
+            .shp-btn {
+                border: none;
+                outline: none;
+                font-size: 10px;
+                font-weight: 600;
+                width: 60px;
+                margin-left: 5px;
+                color: $white-color;
+                background-color: $content-color;
+
+            }
+
+        }
+    }
+
+    .top-right {
+        .l-left {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+
+            p {
+                font-size: 13px;
+                font-weight: 700;
+                margin-right: 15px;
+                margin: 0%;
+
+                cursor: pointer;
+            }
+
+        }
+
+        .l-right {
+            ul {
+                list-style: none;
+                margin: 0;
+
+                &:hover {
+
+                    li,
+                    a {
+                        color: gray;
+                    }
+                }
+
+                i {
+                    font-size: 10px;
+                    margin-left: 10px;
+                    font-weight: 700;
+                }
+
+                li {
+                    font-size: 15px;
+                    font-weight: 500;
+
+                    a {
+                        color: $alt-color;
+                    }
+
+                    position: relative;
+
+                    &:hover {
+                        .drop-li {
+                            visibility: visible;
+                            opacity: 1;
+                            transform: translateY(0);
+                            transition: 0.3s ease;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .drop-li {
+                        position: absolute;
+                        top: 100;
+                        background-color: $white-color;
+                        list-style: none;
+                        padding: 0 15px;
+                        width: 50px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: translateY(-30px);
+
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+
+    }
+
+    .middle-header {
+        .logo {
+            width: 30%;
+            padding: 30px;
+            text-align: center;
+            background-color: black;
+        }
+
+        .middle-menu {
+            width: 70%;
+            padding: 30px;
+            background-image: linear-gradient(to right, #313131, #2B2B2B, #242424, #1A1A1A, #111111);
+        }
+
+        .middle-menu {
+            .search1 {
+                padding: 14px 13px;
+                font-size: 20px;
+                background-color: $content-color;
+                color: $white-color;
+                font-weight: 500;
+                border: none;
+                margin-left: 80px;
+            }
+
+            input {
+                padding: 11px;
+                border: 0.2px solid grey;
+                padding-left: 20px;
+                padding-right: 150px;
+                background-color: $search-color;
+                font-weight: 500;
+            }
+
+            .acc {
+                margin-left: 30px;
+            }
+
+            a {
+                margin-right: 20px;
+                border-right: 1px solid grey;
+                padding-right: 10px;
+                color: #fff;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+
+            .cart-bag {
+                i {
+                    color: $white-color;
+                    font-size: 20px;
+                    position: relative;
+
+                    span {
+                        position: absolute;
+                        font-size: 12px;
+                        top: -8px;
+                        left: 10px;
+                        background-color: $content-color;
+                        border-radius: 100%;
+                        padding: 2px 4px;
+                    }
+                }
+            }
+
+
+
+
+
+
+        }
+    }
+
+
+    .bottom-header {
+        margin-top: 20px;
+
+        .main-ul {
+            .pink-li {
+                .pink-a {
+                    color: $content-color;
+                    position: relative;
+
+                    &::before {
+                        background-color: $content-color;
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 4px;
+                        border-radius: 50%;
+                        right: 100%;
+                        top: 40%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            li {
+                margin-left: 30px;
+                list-style: none;
+
+
+                .pink-a2 {
+                    color: $alt-color;
+                    font-weight: 500;
+                    font-size: 15px;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 4px;
+                        background-color: grey;
+                        border-radius: 50%;
+                        right: 100%;
+                        top: 40%;
+                        margin-right: 10px;
+                    }
+
+                    i {
+                        margin-left: 7px;
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+
+                    .gift1 {
+                        color: $content-color;
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        color: $content-color;
+                        transition: 0.5s ease;
+                    }
+
+
+
+
+
+
+
+
+                }
+            }
+            .pages{
+                position: relative;
+                &:hover{
+                    .home-layouts{
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateY(0);
+                        transition: .1s ease;
+
+                    }
+                }
+                .home-layouts{
+                    width: 800px;
+                    position: absolute;
+                    top: 100%;
+                    left: -15px;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(-50px);
+                    transition: 0.1s ease;
+
+                    ul{
+                        border-right: 1px solid gray;
+                        .layouts{
+                            margin-bottom: 15px;
+                            font-weight:500;
+                            font-size: 15px;
+                        }
+                        li{
+                            .hot{
+                                background-color: red;
+                            }
+                            .new{
+                                background-color: #22CC47;
+                            }
+                            .hot, .new{
+                                padding: 4px 7px;
+                                font-size: 10px;
+                                font-weight: 700;
+                                color: $white-color;
+                                margin-left: 4px;
+                                border-radius: 1mm;
+                            }
+                            margin-bottom: 10px;
+                            &:hover{
+                                a{
+                                    color: $content-color;
+                                }
+                            }
+                            a{
+                                color: $alt-color;
+                                font-weight: 400;
+                                
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        
+        
+    }
+
+
+
+
+
+}
+
+
+
+
+
+.container1{
+    width: 95%;
+    margin: auto;
+}
